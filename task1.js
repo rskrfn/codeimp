@@ -1,10 +1,20 @@
-let kata = "malam"
-let halfLength = (kata.length / 2) - (kata.length / 2) % 1
-for (i = 0; i < halfLength; i++) {
-  if (kata[i] !== kata[kata.length - i - 1]) {
-    hasil = "bukan palindrome";
+function palindromeCheck(data) {
+  if (data === undefined) {
+    console.log("Data harus diisi");
+  }
+  else if (typeof data !== "string") {
+    console.log("Data harus berupa string");
   } else {
-    hasil = "palindrome";
+    let halfLength = data.length / 2 - ((data.length / 2) % 1);
+    let hasil = "";
+    for (i = 0; i < halfLength; i++) {
+      if (data[i] !== data[data.length - i - 1]) {
+        hasil = "bukan palindrome";
+      } else {
+        hasil = "palindrome";
+      }
+    }
+    console.log(data + " adalah " + hasil);
   }
 }
-console.log(kata + " adalah " + hasil)
+palindromeCheck("malam");
