@@ -1,0 +1,14 @@
+1. Mulai
+2. Buat variabel data = 5956560159466056, arrData = [], j = 0, hasil
+3. Perulangan (i=0; i<panjang num; i++) maju ke langkah 4 atau 5, jika selesai maka maju ke langkah 6
+4. Jika nilai data !== 0  maka, masukkan nilai data[i] kedalam arrData[j], kembali ke langkah 3
+5. Jika nilai data === 0 maka, lakukan j += 1 dan kembali ke langkah 3
+6. Lakukan perulangan (x=panjang arrData-1; x>=0; x--) maju ke langkah 7, jika perulangan selesai maka maju ke langkah 11
+7. lakukan perulangan (y=1; y<=x; y++) maju ke langkah 8, jika selesai kembali ke langkah 6
+8. Cek arrData[y-1] > arrData[y]
+9. Jika iya, maka var temp = arrData[y-1], arrData[y-1] = arrData[y], arrData[y] = temp, kembali ke langkah 7
+10. Jika tidak, maka kembali ke langkah 7
+11. Lakukan perulangan (t=0; t<panjang arrData; t++) maju ke langkah 12, jika selesai maka maju ke langkah 13
+12. hasil += arrData[t], kembali ke langkah 11
+13. output = hasil
+14. Selesai
