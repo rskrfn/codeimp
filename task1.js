@@ -5,7 +5,7 @@ function palindromeCheck(data) {
   else if (typeof data !== "string") {
     console.log("Data harus berupa string");
   } else {
-    let halfLength = data.length / 2 - ((data.length / 2) % 1);
+    let halfLength = data.length / 2 - ((data.length / 2) % 1);//cukup gunakan length/2
     let hasil = "";
     for (i = 0; i < halfLength; i++) {
       if (data[i] !== data[data.length - i - 1]) {
@@ -17,4 +17,4 @@ function palindromeCheck(data) {
     console.log(data + " adalah " + hasil);
   }
 }
-palindromeCheck("malam");
+palindromeCheck(124);

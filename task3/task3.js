@@ -8,7 +8,7 @@ function divideAndSort(data) {
     let numSort = [];
     let hasil = [""];
     for (i = 0; i < num.length; i++) {
-      let temp = [...num[i]].map(Number).sort((a, b) => a - b);
+      let temp = [...num[i]].map(Number).sort((a, b) => a - b);// tanpa cb cukup
       numSort[i] = "";
       numSort[i] += temp.join("");
     }
