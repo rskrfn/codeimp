@@ -17,4 +17,4 @@ function palindromeCheck(data) {
     console.log(data + " adalah " + hasil);
   }
 }
-palindromeCheck(124);
+palindromeCheck(1234);
